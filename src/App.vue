@@ -90,7 +90,7 @@
         />
         <section class="relative">
           <h3 class="text-lg leading-6 font-medium text-gray-900 my-8">
-            {{ sel.name }} - USD
+            {{ sel.name }} - USDqqqq
           </h3>
           <div class="flex items-end border-gray-600 border-b border-l h-64">
             <div
@@ -157,12 +157,11 @@ export default {
         const data1 = await f.json();
         this.tickers.find((tt) => tt.name === curentTicker.name).price =
           data1.USD > 1 ? data1.USD.toFixed(2) : data1.USD.toPrecision(2);
-          if(this.sel.name === curentTicker.name){
-            this.graph.push(curentTicker.price)
-          }
+        if (this.sel.name === curentTicker.name) {
+          this.graph.push(curentTicker.price);
+        }
       }, 3000);
 
-      
       this.ticker = "";
     },
 
