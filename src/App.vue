@@ -177,7 +177,7 @@ export default {
       this.tickers = this.tickers.filter((t) => t !== tickerToRemove);
     },
   },
-
+//rfrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
   components: {},
 };
 </script>
